@@ -9,7 +9,6 @@ import '../styles/Sidebar.css';
 const Sidebar = () => {
     return (
         <div className="sidebar">
-            <h3>This a sidebar.</h3>
             <SidebarRow Icon={HomeIcon} title="Home"/>
             <SidebarRow Icon={WhatshotIcon} title="Trending"/>
             <SidebarRow Icon={SubscriptionsIcon} title="Subscription"/>
