@@ -8,6 +8,7 @@ const RecommendedVideos = () => {
     for(let x = 1; x <= 24; x++){
         dummyContent.push (
             <VideoCard 
+                key = {x}
                 image = "https://dummyimage.com/600x400/000/fff"
                 channel = "Placeholder Channel"
                 channelImage = "https://dummyimage.com/200x200/ff47ff/ffffff&text=Avatar"

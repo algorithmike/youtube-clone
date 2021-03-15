@@ -20,6 +20,7 @@ const SearchPage = () => {
                 numOfVideos={24}
                 description="Welcome to my front-end YouTube clone built with React. This is not a real channel. This is not a real YouTube page."
             />
+            <hr/>
         </div>
     )
 }

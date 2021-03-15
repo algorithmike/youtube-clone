@@ -1,5 +1,6 @@
 import React from 'react';
 import { Avatar } from '@material-ui/core';
+import CheckCircleOutlineOutlinedIcon from '@material-ui/icons/CheckCircleOutlineOutlined';
 import '../styles/ChannelRow.css';
 
 const ChannelRow = (
@@ -7,7 +8,14 @@ const ChannelRow = (
 ) => {
     return (
         <div className="channelRow">
-            <Avatar alt={channel} src={image}/>
+            <Avatar className="channelRow__logo"
+                alt={channel} src={image}
+            />
+            <div className="channelRow__text">
+                <h4>{channel} {verified && <CheckCircleOutlineOutlinedIcon/>}</h4>
+                <p>{subs} subscribers &bull; {numOfVideos} videos</p>
+                <p>{description}</p>
+            </div>
         </div>
     )
 }
