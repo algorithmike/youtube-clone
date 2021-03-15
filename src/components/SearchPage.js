@@ -2,6 +2,7 @@ import '../styles/SearchPage.css';
 import React from 'react';
 import TuneOutlinedIcon from '@material-ui/icons/TuneOutlined';
 import ChannelRow from './ChannelRow';
+import VideoRow from './VideoRow';
 
 const SearchPage = () => {
     return (
@@ -21,6 +22,16 @@ const SearchPage = () => {
                 description="Welcome to my front-end YouTube clone built with React. This is not a real channel. This is not a real YouTube page."
             />
             <hr/>
+
+            <VideoRow
+                views="37.4M"
+                subs="7.1M"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu feugiat augue. Cras elit sem, volutpat vitae interdum id, feugiat quis justo. Morbi vel nibh sollicitudin, cursus arcu vel, bibendum augue. Phasellus luctus est in tincidunt tempus. Pellentesque pretium ornare ex scelerisque efficitur."
+                timestamp="4 days ago"
+                channel="Michael Fernandez"
+                title="Lorem Ipsum"
+                image="https://dummyimage.com/600x400/000/fff"
+            />
         </div>
     )
 }
