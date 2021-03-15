@@ -21,6 +21,7 @@ const Header = () => {
             </div>
             <div className="header__middle">
                 <input
+                    className="header__inputField"
                     value={searchTerm}
                     placeholder="Search"
                     type="text"
